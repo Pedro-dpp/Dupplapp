@@ -1,0 +1,84 @@
+.accordion-button::after {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#faq-search {
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem;
+  }
+
+  .faq-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .search-container {
+    padding: 0 1rem;
+  }
+}
+
+.faq-header {
+  background-color: rgba(241, 238, 225, 0.9);
+  color: #333;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.faq-subtitle {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  font-weight: 600;
+  background-color: rgba(241, 238, 225, 0.7);
+  color: #1a1a1a;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(241, 238, 225, 0.9);
+  color: #1a1a1a;
+}
+
+.accordion-body {
+  background-color: rgba(241, 238, 225, 0.9);
+  color: #444;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: #f1eee1;
+}

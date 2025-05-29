@@ -1,0 +1,186 @@
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body {
+  background-image: url("../assets/fondoLiso.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --bs-body-bg: #c0c0c0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #f1eee1;
+}
+
+#wordle-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f1eee1;
+  margin-top: 15px;
+}
+
+body.ready {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-primary {
+  background-color: #f1eee1 !important;
+  border-color: #e0ddd0 !important;
+  color: #333 !important;
+}
+
+.btn-primary:hover {
+  background-color: #e0ddd0 !important;
+  border-color: #d0cabc !important;
+}
+
+#navbar-container {
+  min-height: 60px;
+  background: transparent;
+}
+
+#modalCartasBaraja .modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#modalCartasBaraja .card {
+  width: 150px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#modalCartasBaraja .card img {
+  width: 100%;
+  height: auto;
+}
+
+#modalCartasBaraja .card-body {
+  padding: 10px;
+}
+
+#modalCartasBaraja .card-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+#modalCartasBaraja .card-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #6c757d;
+}
+
+.dropdown-toggle:hover {
+  color: #000;
+}
+
+.dropdown-menu {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.dropdown-item:disabled {
+  color: #ccc;
+}
+
+.banner {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.banner img {
+  max-height: 800px;
+  background-color: #1a1a1a;
+}
+
+.logo {
+  max-width: 40px;
+}
+
+.nombre-baraja {
+  color: #f1eee1 !important;
+  font-weight: bold !important;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 0.25rem;
+}
+
+.stat-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.type-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 0.25rem;
+}
+
+.type-label {
+  font-weight: 500;
+}
+
+.type-value {
+  font-weight: 600;
+}
+
+.w {
+  color: white;
+}
+
+label {
+  color: white;
+}

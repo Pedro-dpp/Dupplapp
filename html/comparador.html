@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparador - DUPPLAPP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/stylesPlantillas.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/cargarPlantillasHtml.js" defer></script>
+    <script src="../js/comparador.js" defer></script>
+    <style>
+      .select-disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <div class="container mt-4">
+      <h1>Comparador de Cartas y Barajas</h1>
+
+      <div class="mb-3">
+        <label for="tipoComparacion" class="form-label"
+          >¿Qué deseas comparar?</label
+        >
+        <select class="form-select" id="tipoComparacion">
+          <option value="cartas">Cartas</option>
+          <option value="barajas">Barajas</option>
+        </select>
+      </div>
+
+      <div id="selectorCartas" class="mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="carta1" class="form-label"
+              >Selecciona la primera carta:</label
+            >
+            <select class="form-select" id="carta1"></select>
+          </div>
+          <div class="col-md-6">
+            <label for="carta2" class="form-label"
+              >Selecciona la segunda carta:</label
+            >
+            <select class="form-select select-disabled" id="carta2" disabled>
+              <option value="">Selecciona primero una carta</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="selectorBarajas" class="mb-3" style="display: none">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="baraja1" class="form-label"
+              >Selecciona la primera baraja:</label
+            >
+            <select class="form-select" id="baraja1"></select>
+          </div>
+          <div class="col-md-6">
+            <label for="baraja2" class="form-label"
+              >Selecciona la segunda baraja:</label
+            >
+            <select class="form-select" id="baraja2"></select>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary float-end" onclick="comparar()">
+        <strong>COMPARAR</strong>
+      </button>
+
+      <!-- Resultados de la comparación -->
+      <div class="row mt-4" id="resultadosComparacion">
+        <div class="col-md-12">
+          <h2>Resultados de la Comparación:</h2>
+          <div id="graficosComparacion"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "descripcion": "VALENTÍA (La Invocación puede atacar directamente el turno que entra en juego)."
+  },
+  {
+    "id": 2,
+    "descripcion": "CHANTAJE X (Se debe pagar el coste en monedas X que indica la propia habilidad al comienzo del siguiente turno del jugador que la invocó. Si no, va al Cementerio)."
+  },
+  {
+    "id": 3,
+    "descripcion": "DESAPERCIBIDO (La Invocación no puede ser bloqueada si ataca ella sola)."
+  },
+  {
+    "id": 4,
+    "descripcion": "FANFARRÓN (La Invocación debe ser bloqueada obligatoriamente)."
+  },
+  {
+    "id": 5,
+    "descripcion": "SACRIFICIO (Se puede enviar la Invocación al Cementerio para activar el efecto de la habilidad)."
+  },
+  {
+    "id": 6,
+    "descripcion": "FUERZA BRUTA X (Si la Invocación que tiene esta habilidad es bloqueada, la Zona atacada recibe X de daño donde X es la cantidad que especifique la habilidad)."
+  },
+  {
+    "id": 7,
+    "descripcion": "MEJORA X (Puedes pagar el coste de Mejora para activar los efectos adicionales de una carta)."
+  }
+]

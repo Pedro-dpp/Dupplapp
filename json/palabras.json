@@ -1,0 +1,50 @@
+[
+  {
+    "palabra": "CARTA",
+    "definicion": "Elemento básico del juego, hay varios tipos: Zonas, Invocaciones, Eventos y Reliquias."
+  },
+  {
+    "palabra": "COSTE",
+    "definicion": "Cantidad de monedas necesarias para jugar una carta."
+  },
+  {
+    "palabra": "ZONAS",
+    "definicion": "Tipo de carta que permite jugar Invocaciones que sean del mismo estamento que ella."
+  },
+  {
+    "palabra": "INVOCAR",
+    "definicion": "Acción de poner en juego una carta de Invocación desde la mano pagando su coste. Aplicable solo a Invocaciones."
+  },
+  {
+    "palabra": "RELIQUIA",
+    "definicion": "Tipo de carta con efectos pasivos o activables."
+  },
+  {
+    "palabra": "EVENTO",
+    "definicion": "Tipo de carta de un solo uso con efecto inmediato."
+  },
+  {
+    "palabra": "BARAJA",
+    "definicion": "Conjunto de cartas (30) con las que juega un jugador."
+  },
+  {
+    "palabra": "ESTAMENTOS",
+    "definicion": "Clases o facciones dentro del juego."
+  },
+  {
+    "palabra": "BANQUILLO",
+    "definicion": "Grupo de cartas adicionales fuera de la baraja principal."
+  },
+  {
+    "palabra": "DERRIBAR",
+    "definicion": "Podemos derribar Zonas o Invocaciones. Una carta es derribada cuando su vida llega a cero."
+  },
+  {
+    "palabra": "DESTRUIR",
+    "definicion": "Enviar una Reliquia al Cementerio. Solo se pueden destruir las Reliquias."
+  },
+  {
+    "palabra": "CONSTRUIR",
+    "definicion": "Acción de poner en juego una Zona. Solo se construyen las Zonas."
+  }
+]

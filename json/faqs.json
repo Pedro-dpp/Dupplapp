@@ -1,0 +1,24 @@
+[
+  {
+    "pregunta": "¿Qué es Duppla: el Duelo?",
+    "respuesta": "Duppla: el Duelo, es un juego de cartas estratégico, donde los jugadores compiten usando diferentes barajas con habilidades únicas. El objetivo es destruir las Zonas del oponente antes de que él destruya las tuyas.",
+    "tags": ["básico", "reglas"]
+  },
+  {
+    "pregunta": "¿Dónde puedo consultar las reglas oficiales de Duppla: el Duelo?",
+    "respuesta": "Las reglas oficiales están disponibles en nuestra página de inicio. Se actualizan con cada nueva expansión o ajuste de balance. Recomendamos revisarlas para estar al día.",
+    "tags": ["reglas", "actualizaciones"],
+    "link": "reglas.html"
+  },
+  {
+    "pregunta": "¿Cómo me entero de las novedades, cambios en las reglas o balance del juego?",
+    "respuesta": "Enviamos actualizaciones importantes por correo electrónico a quienes están suscritos a nuestro canal de difusión. ¡Suscríbete desde nuestra web para no perderte nada!",
+    "tags": ["actualizaciones", "reglas", "comunidad"],
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSdeP7TolVF7tVMnPrP2noDBxxoB68K4He3wiKli6-L7bBn7Ww/viewform?embedded=true"
+  },
+  {
+    "pregunta": "¿Hay torneos oficiales de Duppla: el Duelo?",
+    "respuesta": "Sí, organizamos torneos presenciales. Anunciamos cada evento a través de nuestro canal de difusión. ¡Es una gran oportunidad para poner a prueba tu estrategia y ganar premios exclusivos!",
+    "tags": ["torneos", "competitivo", "eventos"]
+  }
+]

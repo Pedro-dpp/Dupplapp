@@ -1,0 +1,335 @@
+/* Estructura principal */
+.main-content {
+  min-height: calc(100vh - 120px);
+  padding-bottom: 2rem;
+}
+
+.page-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Secciones */
+.battlefield-section,
+.controls-section,
+.cards-section {
+  background-color: #c0c0c0;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.zones-title {
+  color: var(--success-color);
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+/* Áreas de cartas */
+.hand-area-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hand-area {
+  flex: 1;
+}
+
+.deck-area {
+  width: 150px;
+}
+
+.card-area {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.area-title {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Grids de cartas */
+.battlefield-grid,
+.zones-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 150px;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+}
+
+.cards-container {
+  display: flex;
+  gap: 0.75rem;
+  min-height: 160px;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 0.5rem;
+}
+
+/* Zonas Disponibles - Estilo especial */
+.zones-deck .cards-container {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  min-height: 160px;
+  padding: 0.5rem;
+  overflow-x: visible;
+  width: max-content;
+  max-width: 100%;
+}
+
+/* Cartas */
+.card-img {
+  width: 110px;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.card-img:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+/* Estilos específicos por área */
+.hand .card-img {
+  border-color: var(--primary-color);
+}
+
+.zones-deck .card-img {
+  border-color: var(--success-color);
+}
+
+.main-deck .card-img {
+  border-color: var(--gray-600);
+}
+
+.graveyard .card-img {
+  border-color: var(--danger-color);
+}
+
+/* Controles */
+.main-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.counters-container {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--light-bg);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--border-radius);
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.counter-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Modal zoom */
+.modal-zoom {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-zoom-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 5vh auto;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+
+.cerrar-zoom {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hand-area-container {
+    flex-direction: column;
+  }
+
+  .deck-area {
+    width: 100%;
+  }
+
+  .counters-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    width: 95px;
+    height: 133px;
+  }
+
+  .main-controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-controls .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .zones-deck .cards-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Contadores de cartas */
+.contador-cartas {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Colores específicos para cada sección */
+.hand .contador-cartas {
+  background-color: var(--primary-color);
+}
+.zones-deck .contador-cartas {
+  background-color: var(--success-color);
+}
+.main-deck .contador-cartas {
+  background-color: var(--gray-600);
+}
+.graveyard .contador-cartas {
+  background-color: var(--danger-color);
+}
+.battlefield-grid .contador-cartas {
+  background-color: var(--warning-color);
+}
+.zones-grid .contador-cartas {
+  background-color: var(--info-color);
+}
+
+/* Estilo para cartas giradas */
+.card-img[data-girada="true"] {
+  transform: rotate(90deg);
+  cursor: n-resize;
+}
+
+/* Transición para el giro */
+.card-img {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+/* Evitar selección de texto al hacer doble click */
+.card-area {
+  user-select: none;
+}
+
+/* Contenedor de estadísticas */
+.stats-container {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--light-bg);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--border-radius);
+  margin: 0 1rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .stats-container {
+    order: 3;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}
+
+#btnSiguienteTurno {
+  background-color: #993333;
+  border: #993333;
+}

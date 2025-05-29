@@ -1,0 +1,38 @@
+LOGICA DE DATOS
+---------------
+
+	TIPO DE CARTA:
+	- Zona (1)
+	- Invocacion (2)
+	- Evento (3)
+	- Reliquia (4)
+
+	ESTAMENTO:
+	- Bajo (1)
+	- Medio (2)
+	- Alto (3)
+	- Neutro (4)
+	- Ninguno (5): para eventos y reliquias
+
+	HABILIDADES:
+	- Valentia (1)
+	- Chantaje X (2)
+	- Desapercibido (3)
+	- Fanfarron (4)
+	- Sacrificio (5)
+	- Fuerza Bruta X (6)
+	- Mejora X (7)
+	+ ...
+
+	BANQUILLO:
+	- Si (1)
+	- No (0)
+
+	GIRADA:
+	- Si (1)
+	- No (0)
+
+	ARTISTAS:
+	- Paco (1)
+	- Pedro (2)
+	- Otro (3)

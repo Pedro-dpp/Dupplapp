@@ -1,0 +1,645 @@
+{
+  "tutoriales": {
+    "facil": [
+      {
+        "turn": 3,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 3,
+        "board": {
+          "rival-zones": [32, 34, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [10],
+          "mano": [8, 25]
+        },
+        "description": "Estamos en la Fase de Juego 1 de nuestro turno número 3. Tenemos en juego una Invocación 40/40; y en la mano, otra Invocación y un Evento, que acabamos de robar este turno. Como el rival no tiene Invocaciones en su mesa para defender, vamos a aprovechar para atacar a una de sus Zonas.",
+        "action": null
+      },
+      {
+        "turn": 3,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 2,
+        "board": {
+          "rival-zones": [32, 34, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [10, 8],
+          "mano": [25]
+        },
+        "description": "Aunque antes de atacar, invocamos al Campesino por una moneda. Así tendremos un bloqueador asegurado para los siguientes turnos. Acto seguido, entramos a la fase de Combate para atacar una de las Zonas del rival.",
+        "action": null
+      },
+      {
+        "turn": 3,
+        "phase": "Combate",
+        "player": "Jugador 1",
+        "coins": 2,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 40 }, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, { "id": 10, "girada": true }],
+          "mano": [25]
+        },
+        "description": "Para atacar con una Invocación, tenemos que girarla 90º, y elegir una Zona del rival como objetivo de ese ataque. Efectivamente, la Invocación que teníamos en mesa se gira, restando su ataque (40) a la vida total de la Zona objetivo (80), dejándola tan solo con 40 puntos de vida; lo que nos acerca más a nuestro objetivo.",
+        "action": null
+      },
+      {
+        "turn": 3,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 2",
+        "coins": 3,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 40 }, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, { "id": 10, "girada": true }],
+          "mano": [25]
+        },
+        "description": "Comienza el turno del rival. No sabemos qué cartas tiene en la mano, pero nosotros tenemos en la nuestra un Evento para contestar a su jugada.",
+        "action": null
+      },
+      {
+        "turn": 3,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 40 }, 36],
+          "rival-summons": [50],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, { "id": 10, "girada": true }],
+          "mano": [25]
+        },
+        "description": "El rival entra en su Fase de Juego 1, gastando las 3 monedas que tiene en una Invocación 40/40 como la nuestra; la cual servirá para bloquear nuestros ataques.",
+        "action": null
+      },
+      {
+        "turn": 4,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 1",
+        "coins": 4,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 40 }, 36],
+          "rival-summons": [50],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, 10],
+          "mano": [25, 18]
+        },
+        "description": "Recordamos que al comienzo de cada turno, robamos carta del mazo, enderezamos nuestras cartas giradas y volvemos a ganar monedas. Hemos robado otra Invocación, que nos viene muy bien para jugar el Evento que tenemos, y poder atacar sin bloqueadores este turno también. ¡Vamos a intentarlo!",
+        "action": null
+      },
+      {
+        "turn": 4,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 3,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 40 }, 36],
+          "rival-summons": [50],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, 10, 18],
+          "mano": [25, 23]
+        },
+        "description": "Primeramente, jugamos la Invocación que acabamos de robar, que nos permite robar otra carta. Esto nos deja con 3 monedas, las justas para jugar el Evento que tenemos desde el principio, y así poder derribar la Invocación que tiene el rival.",
+        "action": null
+      },
+      {
+        "turn": 4,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 40 }, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [
+            { "id": 8, "girada": true },
+            10,
+            { "id": 18, "girada": true }
+          ],
+          "mano": [23]
+        },
+        "description": "Gastamos las 3 monedas que nos quedan en dicho Evento, girando 2 de nuestras Invocaciones como coste adicional. Aprovechamos y giramos las más débiles para atacar con la más fuerte y derribar la Zona que está dañada.",
+        "action": null
+      },
+      {
+        "turn": 4,
+        "phase": "Combate",
+        "player": "Jugador 1",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [
+            { "id": 8, "girada": true },
+            { "id": 10, "girada": true },
+            { "id": 18, "girada": true }
+          ],
+          "mano": [23]
+        },
+        "description": "Atacamos a la Zona más dañada, para dejarla lo más cerca de 0 posible. En este caso, el daño que hace nuestra Invocación es el justo para acabar con la Zona que tiene menos vida. Dejando así la primera Zona derribada.",
+        "action": null
+      },
+      {
+        "turn": 4,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 2",
+        "coins": 4,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 36],
+          "rival-summons": [],
+          "our-zones": [2, 4, 6],
+          "our-summons": [
+            { "id": 8, "girada": true },
+            { "id": 10, "girada": true },
+            { "id": 18, "girada": true }
+          ],
+          "mano": [23]
+        },
+        "description": "El rival tiene pocas opciones ya, solo puede jugar Invocaciones para intentar bloquear tus ataques.",
+        "action": null
+      },
+      {
+        "turn": 4,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 2,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 36],
+          "rival-summons": [44],
+          "our-zones": [2, 4, 6],
+          "our-summons": [
+            { "id": 8, "girada": true },
+            { "id": 10, "girada": true },
+            { "id": 18, "girada": true }
+          ],
+          "mano": []
+        },
+        "description": "Como era de esperar el rival juega otra Invocación, que además de sumar un bloqueador a la línea defensiva, nos obliga a descartar la última carta que teníamos en la mano. Al no poder hacer mucho más, el rival nos cede el turno.",
+        "action": null
+      },
+      {
+        "turn": 5,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 1",
+        "coins": 5,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 36],
+          "rival-summons": [44],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, 10, 18],
+          "mano": [20]
+        },
+        "description": "Finalmente, con la carta que hemos robado, ganamos la partida. Que sea una Invocación nos da un poco igual, lo que nos importa es el efecto que tiene dicha carta. Podemos girar la única Invocación del rival. Esto hace que dicha carta no pueda efectuar bloqueos, ya que tiene que estar enderezada.",
+        "action": null
+      },
+      {
+        "turn": 5,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 1,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 36],
+          "rival-summons": [{ "id": 44, "girada": true }],
+          "our-zones": [2, 4, 6],
+          "our-summons": [8, 10, 18, 20],
+          "mano": []
+        },
+        "description": "Jugamos la Invocación que acabamos de robar, girando la única que tiene el rival. A continuación, entramos en la fase de Combate.",
+        "action": null
+      },
+      {
+        "turn": 5,
+        "phase": "Combate",
+        "player": "Jugador 1",
+        "coins": 1,
+        "board": {
+          "rival-zones": [{ "id": 32, "vida": 0 }, { "id": 34, "vida": 0 }, 36],
+          "rival-summons": [{ "id": 44, "girada": true }],
+          "our-zones": [2, 4, 6],
+          "our-summons": [
+            { "id": 8, "girada": true },
+            { "id": 10, "girada": true },
+            { "id": 18, "girada": true },
+            20
+          ],
+          "mano": []
+        },
+        "description": "Sumando todo el ataque de las Invocaciones con las que podemos atacar, podemos derribar cualquiera de las Zonas que tiene construidas el rival. Atacamos con todas ellas y dejamos la 2ª Zona del rival derribada, ganando así la partida.",
+        "action": null
+      }
+    ],
+    "dificil": [
+      {
+        "turn": 5,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 1",
+        "coins": 4,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [
+            { "id": 38, "girada": true },
+            42,
+            { "id": 45, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19],
+          "mano": [8, 14, 24]
+        },
+        "description": "Nos encontramos al comienzo de nuestro turno 5. Perdemos una moneda por el Chantaje de nuestra Invocación. Tenemos una Zona dañada y otra inhabilitada; en la mano 2 Invocaciones y un Evento que nos permite robar cartas. Antes de nada, jugaremos el Evento en la Fase de Juego 1.",
+        "action": null
+      },
+      {
+        "turn": 5,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 3,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [
+            { "id": 38, "girada": true },
+            42,
+            { "id": 45, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19],
+          "mano": [14, 13, 21]
+        },
+        "description": "Jugamos el Evento por 1 moneda. Descartamos la Invocación que no podemos jugar por la Zona inhabilitada, y acto seguido robamos 2 cartas más. Y ahora, como tenemos bastantes Invocaciones en la mano, gastamos las 3 monedas que nos quedan en invocarlas para hacer presión.",
+        "action": null
+      },
+      {
+        "turn": 5,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [{ "id": 38, "girada": true }, 42, 45],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14, 13],
+          "mano": [21]
+        },
+        "description": "Una de las Invocaciones que hemos jugado endereza a otra cuando entra en juego (enderezamos el Parásito de la Cosecha). Además si la sacrificamos podemos derribar una Invocación girada, que será la otra que tiene el rival, sobre todo porque es inbloqueable si ataca ella sola.",
+        "action": null
+      },
+      {
+        "turn": 5,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [42, 45],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21]
+        },
+        "description": "En este punto, hemos recuperado la superioridad numérica de Invocaciones, pero el rival cuenta con unidades bastante fuertes, por lo que no es muy conveniente atacar. Lo mejor será pasar el turno al oponente.",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 2",
+        "coins": 6,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [42, 45],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21]
+        },
+        "description": "Turno 6, bastantes monedas. El rival se dispone a jugar un Evento en la Fase de Juego 1 de su turno.",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 4,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [54, 42, 45],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21]
+        },
+        "description": "El rival juega Ritual de Sacrificio por dos monedas; esto hará que el turno siguiente tenga 2 monedas extra, sacrificando una de sus Invocaciones.",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 4,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [45],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21]
+        },
+        "description": "¡Ha sacrificado su Invocación más fuerte! Seguro que está planeando algo...",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [45, 41],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21]
+        },
+        "description": "Con las 4 monedas restantes, el rival Invoca al Guardián del Túmulo, que le permite regresar uno de sus Tumularios del Cementerio a su mesa; y obviamente, regresará la que ha sacrificado antes.",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 0,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [45, 41, 42],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21]
+        },
+        "description": "Efectivamente, el rival recupera su línea de defensa con Invocaciones muy fuertes, ahora nos toca a nosotros. ¿Qué podremos hacer?",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 1",
+        "coins": 6,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [45, 41, 42],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14],
+          "mano": [21, 11]
+        },
+        "description": "El rival ha jugado bien sus cartas, pero contamos con una respuesta. Robamos la carta que nos corresponde del turno, y en la Fase de Juego 1, invocaremos a la Procesión del Silencio, que romperá la línea defensiva del oponente.",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 1,
+        "board": {
+          "rival-zones": [32, 34, 37],
+          "rival-summons": [
+            { "id": 45, "girada": true },
+            { "id": 41, "girada": true },
+            { "id": 42, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [18, 19, 14, 21],
+          "mano": [11]
+        },
+        "description": "Gastamos las 5 monedas que nos pide la Invocación, dejándonos con 1 solamente; aunque es un precio razonable. Entramos en la fase de Combate.",
+        "action": null
+      },
+      {
+        "turn": 6,
+        "phase": "Combate",
+        "player": "Jugador 1",
+        "coins": 1,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [
+            { "id": 45, "girada": true },
+            { "id": 41, "girada": true },
+            { "id": 42, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [
+            { "id": 14, "girada": true },
+            { "id": 18, "girada": true },
+            { "id": 19, "girada": true },
+            21
+          ],
+          "mano": [11]
+        },
+        "description": "Vamos a atacar con todas las Invocaciones posibles, así derribaremos una de las Zonas del rival sí o sí. Además, el oponente ha jugado bastantes Tumularios, por lo que nuestro objetivo será la Zona Media de Pesadillas.",
+        "action": null
+      },
+      {
+        "turn": 7,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 2",
+        "coins": 9,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [45, 41, 42],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [
+            { "id": 14, "girada": true },
+            { "id": 18, "girada": true },
+            { "id": 19, "girada": true },
+            21
+          ],
+          "mano": [11]
+        },
+        "description": "Turno del rival. Se suman las 2 monedas del Ritual de Sacrificio del turno anterior, quedando 9 para este. Mientras, nosotros, con tan solo una Invocación para bloquear, este turno pinta bastante mal.",
+        "action": null
+      },
+      {
+        "turn": 7,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 6,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [45, 41, 42, 48, 49],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [
+            { "id": 14, "girada": true },
+            { "id": 18, "girada": true },
+            { "id": 19, "girada": true },
+            21
+          ],
+          "mano": [11]
+        },
+        "description": "El oponente comienza Invocando 2 unidades por el precio de una, gracias a la habilidad de la Bruja Invocadora. Ahora cuenta con 5 Invocaciones en su mesa. Ahora se prepara para jugar un Evento en la Fase de Juego 1.",
+        "action": null
+      },
+      {
+        "turn": 7,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 2",
+        "coins": 3,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [
+            45,
+            41,
+            42,
+            { "id": 48, "girada": true },
+            { "id": 49, "girada": true },
+            55
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": 70 },
+            6
+          ],
+          "our-summons": [
+            { "id": 14, "girada": true },
+            { "id": 18, "girada": true },
+            { "id": 19, "girada": true }
+          ],
+          "mano": [11]
+        },
+        "description": "El Rey de Ratas, un Evento que derriba cualquier Invocación girando dos de las tuyas, como era de esperar gira las que acaba de invocar. Mientras nosotros nos hemos quedado sin bloqueadores.",
+        "action": null
+      },
+      {
+        "turn": 7,
+        "phase": "Combate",
+        "player": "Jugador 2",
+        "coins": 3,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [
+            41,
+            { "id": 42, "girada": true },
+            { "id": 45, "girada": true },
+            { "id": 48, "girada": true },
+            { "id": 49, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": -10 },
+            6
+          ],
+          "our-summons": [
+            { "id": 14, "girada": true },
+            { "id": 18, "girada": true },
+            { "id": 19, "girada": true }
+          ],
+          "mano": [11]
+        },
+        "description": "El oponente nos derriba la Zona Media, atacando con 2 de las 3 Invocaciones que tenía enderezadas, quedándose con una para bloquear el siguiente turno.",
+        "action": null
+      },
+      {
+        "turn": 7,
+        "phase": "Inicio de Turno",
+        "player": "Jugador 1",
+        "coins": 7,
+        "board": {
+          "rival-zones": [32, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [
+            41,
+            { "id": 42, "girada": true },
+            { "id": 45, "girada": true },
+            { "id": 48, "girada": true },
+            { "id": 49, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": -10 },
+            6
+          ],
+          "our-summons": [14, 18, 19],
+          "mano": [11, 28]
+        },
+        "description": "Robamos la carta correspondiente del turno, siendo ésta un Evento decisivo para terminar la partida. Despertar al Río nos permite derribar una Zona Baja, como la que tiene el oponente, por 5 monedas.",
+        "action": null
+      },
+      {
+        "turn": 7,
+        "phase": "Fase de Juego 1",
+        "player": "Jugador 1",
+        "coins": 2,
+        "board": {
+          "rival-zones": [{ "id": 32, "vida": 0 }, { "id": 34, "vida": 0 }, 37],
+          "rival-summons": [
+            41,
+            { "id": 42, "girada": true },
+            { "id": 45, "girada": true },
+            { "id": 48, "girada": true },
+            { "id": 49, "girada": true }
+          ],
+          "our-zones": [
+            { "id": 2, "girada": true },
+            { "id": 5, "vida": -10 },
+            6
+          ],
+          "our-summons": [14, 18, 19],
+          "mano": [11]
+        },
+        "description": "No es la manera más bonita de ganar, pero vale lo mismo que si la hubiéramos derribado atacando con Invocaciones. Hay que tener cuidado con los Eventos, son cartas decisivas.",
+        "action": null
+      }
+    ]
+  }
+}

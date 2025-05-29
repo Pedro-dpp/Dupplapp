@@ -1,0 +1,20 @@
+[
+  {
+    "id_baraja": "A",
+    "nombre_baraja": "El Último Pueblo",
+    "num_cartas": 30,
+    "num_zonas": 7
+  },
+  {
+    "id_baraja": "B",
+    "nombre_baraja": "Sombras de la Noche",
+    "num_cartas": 30,
+    "num_zonas": 7
+  },
+  {
+    "id_baraja": "C",
+    "nombre_baraja": "Druidas del Bosque (NEW)",
+    "num_cartas": 30,
+    "num_zonas": 7
+  }
+]

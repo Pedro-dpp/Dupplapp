@@ -1,0 +1,15 @@
+.uno {
+  color: green;
+}
+.tres {
+  color: red;
+}
+.btn2 {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.btn2:hover {
+  background-color: #0b5ed7;
+}

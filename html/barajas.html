@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barajas - DUPPLAPP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="../css/stylesPlantillas.css" rel="stylesheet" />
+    <link href="../css/barajas.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/cargarPlantillasHtml.js" defer></script>
+    <script src="../js/gestionBarajas.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <div class="container mt-4">
+      <h1>Barajas Oficiales</h1>
+      <div class="row" id="barajas-container"></div>
+
+      <div id="baraja-detalle-container" class="mt-4" style="display: none">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center p-2"
+              >
+                <ul
+                  class="nav nav-tabs card-header-tabs flex-grow-1"
+                  id="barajaTabs"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="cartas-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#cartas-content"
+                      type="button"
+                      role="tab"
+                    >
+                      Cartas
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="estadisticas-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#estadisticas-content"
+                      type="button"
+                      role="tab"
+                    >
+                      Estadísticas
+                    </button>
+                  </li>
+                </ul>
+                <button
+                  id="exportarBarajaBtn"
+                  class="btn btn-sm btn-outline-primary ms-2"
+                >
+                  <i class="fas fa-file-export me-1"></i> Exportar
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="barajaTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="cartas-content"
+                    role="tabpanel"
+                  >
+                    <div class="row" id="cartas-container"></div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="estadisticas-content"
+                    role="tabpanel"
+                  >
+                    <div id="estadisticas-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modales -->
+    <div
+      class="modal fade"
+      id="modalCartasBaraja"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cartas de la Baraja</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalCartasBarajaBody"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalEstadisticasBaraja"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Estadísticas de la Baraja</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalEstadisticasBarajaBody"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulación de Mano Inicial - DUPPLAPP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="../css/simulacionMano.css" rel="stylesheet" />
+    <link href="../css/stylesPlantillas.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cargarPlantillasHtml.js" defer></script>
+    <script src="../js/simulacionMano.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main class="container-fluid main-content">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="page-title">Testeo de Mano Inicial</h1>
+
+            <section class="cards-section">
+              <div
+                class="d-flex flex-wrap justify-content-between align-items-center"
+              >
+                <div class="main-controls">
+                  <button id="btnNuevaMano" class="btn btn-primary me-2">
+                    <i class="fas fa-random me-2"></i>Nueva Mano
+                  </button>
+                  <button id="btnMulligan" class="btn btn-secondary">
+                    <i class="fas fa-redo me-2"></i>Mulligan
+                    <span
+                      id="contadorMulligan"
+                      class="badge bg-light text-dark ms-2"
+                      >0/2</span
+                    >
+                  </button>
+
+                  <button id="btnSiguienteTurno" class="btn btn-success">
+                    <i class="fas fa-arrow-right me-2"></i>Siguiente Turno
+                  </button>
+                </div>
+
+                <div class="stats-container">
+                  <div class="stat-item">
+                    <span class="stat-label">Coste medio:</span>
+                    <span id="coste-medio" class="stat-value">0</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Invocaciones:</span>
+                    <span id="contador-invocacion" class="stat-value">0</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Eventos:</span>
+                    <span id="contador-evento" class="stat-value">0</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Reliquias:</span>
+                    <span id="contador-reliquia" class="stat-value">0</span>
+                  </div>
+                </div>
+
+                <div class="counters-container">
+                  <div class="counter">
+                    <span class="counter-label">Monedas:</span>
+                    <div class="counter-controls">
+                      <button
+                        class="btn btn-sm btn-outline-warning decrementar-moneda"
+                      >
+                        -
+                      </button>
+                      <span class="value monedas"
+                        >1 <i class="fas fa-coins"></i
+                      ></span>
+                      <button
+                        class="btn btn-sm btn-outline-warning incrementar-moneda"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="counter">
+                    <span class="counter-label">Turno:</span>
+                    <div class="counter-controls">
+                      <button
+                        class="btn btn-sm btn-outline-info decrementar-turno"
+                      >
+                        -
+                      </button>
+                      <span class="value turno"
+                        >1 <i class="fas fa-flag"></i
+                      ></span>
+                      <button
+                        class="btn btn-sm btn-outline-info incrementar-turno"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hand-area-container mb-4">
+                <div class="hand-area card-area hand">
+                  <h3 class="area-title">
+                    Mano
+                    <span id="contador-mano" class="contador-cartas">0</span>
+                  </h3>
+                  <div
+                    class="cards-container horizontal-scroll"
+                    id="mano"
+                  ></div>
+                </div>
+                <div class="deck-area card-area main-deck">
+                  <h3 class="area-title">
+                    Mazo
+                    <span id="contador-mazo" class="contador-cartas">0</span>
+                  </h3>
+                  <div class="cards-container" id="mazo"></div>
+                </div>
+                <div class="card-area graveyard">
+                  <h3 class="area-title">
+                    Cementerio
+                    <span id="contador-cementerio" class="contador-cartas"
+                      >0</span
+                    >
+                  </h3>
+                  <div class="cards-container" id="cementerio"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="battlefield-section mb-4">
+          <h2 class="section-title">
+            Campo de Batalla
+            <span id="contador-battlefield" class="contador-cartas">0</span>
+          </h2>
+          <div class="battlefield-grid" id="battlefield"></div>
+          <h2 class="zones-title">
+            Zonas Construidas
+            <span id="contador-zonas-construidas" class="contador-cartas"
+              >0</span
+            >
+          </h2>
+          <div class="zones-grid" id="battlefield-zones"></div>
+          <div class="col-12">
+            <div class="card-area zones-deck">
+              <h3 class="area-title">
+                Zonas Disponibles
+                <span id="contador-zonas" class="contador-cartas">0</span>
+              </h3>
+              <div class="cards-container" id="zonas"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="modalZoom" class="modal-zoom">
+      <span class="cerrar-zoom">&times;</span>
+      <img class="modal-zoom-content" id="imagenZoom" />
+    </div>
+
+    <div id="footer-container"></div>
+  </body>
+</html>

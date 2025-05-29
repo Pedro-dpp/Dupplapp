@@ -1,0 +1,33 @@
+.baraja-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.baraja-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+#baraja-detalle-container {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+#cartas-container .card {
+  height: 100%;
+}
+.nav-tabs .nav-link {
+  color: #495057;
+}
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+}
+.card-header-tabs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-right: 0.5rem;
+}
+
+#exportarBarajaBtn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}

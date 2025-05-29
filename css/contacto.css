@@ -1,0 +1,20 @@
+.hero {
+  color: white;
+  /* padding: 100px 0; */
+  padding: 40px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  border-bottom: 2px solid #6c8eff;
+  padding-bottom: 0.5rem;
+}
+.contact {
+  color: white;
+}

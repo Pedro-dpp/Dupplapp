@@ -1,0 +1,124 @@
+{
+  "secciones": [
+    {
+      "titulo": "Conceptos Básicos",
+      "subsecciones": [
+        {
+          "titulo": "Introducción",
+          "contenido": "<p>Duppla, es un juego de cartas por turnos, que busca enfrentar a sus jugadores en un duelo singular de estrategia, que tendrá lugar sobre tu mesa. Existen diversos mazos con temáticas diferenciadas entre sí y cartas con habilidades especiales, que las hacen únicas respecto a las otras.</p><p>Durante las partidas de Duppla, cada jugador deberá ir construyendo, a lo largo de los turnos, una serie de Zonas que conformarán su región de juego, su parte de la mesa. A su vez, los mismo jugadores, buscarán derribar las Zonas de su rival que, claro está, también irá construyendo turno tras turno.</p><p>Además podrás jugar cartas de otros tipos como <em>Invocaciones</em>, <em>Reliquias</em> y <em>Eventos</em>, que actuarán sobre la batalla, manifestándose de distintas formas.</p><p>Cada partida de Duppla es única, diferente a las demás, debido a la inmensa combinación de situaciones y estrategias que surgen durante las sesiones de juego. Con esta guía se pretende explicar el funcionamiento del juego de forma detallada y precisa y aclarar las posibles dudas que surjan durante una partida promedio.</p><p>Duppla ha sido ideado, desarrollado, y construido por <strong>Platas y Murphy Móvola</strong>; al igual que el diseño y arte de las cartas.</p><p>Esperamos que disfrutes de la experiencia y que tu región sea la vencedora.</p>",
+          "imagen": "../assets/edA5.webp"
+        },
+        {
+          "titulo": "Componentes",
+          "contenido": "El juego incluye los siguientes componentes:</p><ol><li><strong>Baraja principal:</strong> Una para cada jugador; contienen 30 cartas, de las cuales 7 tienen que ser Zonas.</li><li><strong>Juego de Dados:</strong> Para llevar la cuenta de los turnos y vida de las Zonas.</li><li><strong>Tablero de juego:</strong> Dividido por partes, una de cada para cada jugador:<ul><li>Mesa de Juego</li><li>Cementerio</li><li>Mazo sin Zonas(Boca abajo)</li><li>Mazo de Zonas (Boca arriba)</li></ul></li><li><strong>Manual de reglas:</strong> Este documento</li></ol>",
+          "imagen": "../assets/symbols.jpg"
+        },
+        {
+          "titulo": "Tipos de Cartas",
+          "contenido": "<p>En Duppla: el Duelo existen diferentes tipos de cartas, cada una con una función específica en el juego. Conocerlas te ayudará a construir estrategias más efectivas:</p><ul><li><strong>Carta de Zona:</strong> Necesarias para jugar Invocaciones, sin ellas no podemos hacerlo. Son las cartas más importantes, ya que de ellas depende la victoria.</li><li><strong>Carta de Invocación:</strong> Tipo de carta que se coloca en mesa para atacar, defender o activar habilidades especiales. Necesarias para derribar las Zonas del oponente.</li><li><strong>Carta de Evento:</strong> Efectos únicos que se activan una vez y luego se descartan. Ideales para sorprender o cambiar el flujo del juego.</li><li><strong>Carta de Reliquia:</strong> Objetos que provocan efectos pasivos en la mesa y que pueden asignarse a Invocaciones para otorgarles efectos persistentes o habilidades especiales.</li></ul>",
+          "imagen": "../assets/symbols.jpg"
+        },
+        {
+          "titulo": "Símbolos Importantes",
+          "contenido": "<p>Las cartas de Duppla: el Duelo presentan una serie de símbolos que transmiten información esencial sobre su uso y características.</p><ul><li><strong>Estamentos:</strong> Existen cuatro:<ul><li><em>Bajo (⁎).</em></li><li><em>Medio (⁑).</em></li><li><em>Alto (⁂).</em></li><li><em>Neutro (–):</em> Flexible, sin restricción de zona.</li></ul></li><li><strong>Evento (≈):</strong> Indica que la carta se juega una vez y luego se descarta, activando un efecto único.</li><li><strong>Reliquia (ψ):</strong> Señala una carta con efectos permanentes que puede vincularse a otras unidades o zonas.</li><li><strong>Fuerza:</strong> Valor ofensivo usado en los combates. Cuanto mayor sea, más daño puede infligir.</li><li><strong>Vida:</strong> Muestra la resistencia de la carta. Si llega a 0, la carta se retira del campo; o si es una Zona se le da la vuelta.</li><li><strong>Monedas (⊙):</strong> Representa el coste que tienen las cartas para poder jugarlas.</li></ul>",
+          "imagen": "../assets/symbols.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Preparación",
+      "subsecciones": [
+        {
+          "titulo": "Barajas",
+          "contenido": "<p>En Duppla: el Duelo, cada jugador utiliza una baraja personal compuesta por exactamente <strong>30 cartas</strong>. Esta baraja se divide de la siguiente forma:</p><ul><li><strong>7 Cartas de Zona:</strong> Estas cartas se colocan <em>boca arriba</em> al comienzo de la partida. El jugador puede revisar sus Zonas disponibles cada turno y elegir cuál colocar en el campo, según las invocaciones que tenga en mano.</li><li><strong>23 Cartas de Acción:</strong> Incluyen Invocaciones, Eventos y Reliquias. Estas cartas se barajan y se colocan <em>boca abajo</em>, formando el mazo principal del que se roban cartas durante la partida.</li></ul><p>Cada jugador debe tener su propia baraja oficial de Duppla de 30 cartas al inicio del duelo, para poder iniciar la partida.</p>",
+          "imagen": "../assets/edA1.webp"
+        },
+        {
+          "titulo": "Inicio de Partida",
+          "contenido": "<p>Antes de comenzar el duelo, se deben seguir estos pasos para preparar la partida:</p><ol><li><strong>Decidir quién comienza:</strong> Se lanza una moneda o se utiliza cualquier método al azar para determinar qué jugador inicia.</li><li><strong>Robo inicial:</strong> Cada jugador roba <strong>5 cartas</strong> del mazo <em>boca abajo</em> (el que contiene Invocaciones, Eventos y Reliquias). <strong>Las cartas de Zona no se roban</strong>.</li><li><strong>Evaluación de mano:</strong> Si un jugador no está conforme con su mano, puede hacer <em>hasta 2 mulligans</em> (barajar su mano de vuelta en el mazo y robar 5 nuevas cartas). Después, el jugador, debe quedarse con la última mano robada.</li><li><strong>Preparación final:</strong> Una vez que ambos jugadores tienen sus 5 cartas iniciales definitivas, comienza la partida.</li></ol>",
+          "imagen": "../assets/symbols.jpg"
+        },
+        {
+          "titulo": "Disposición del Campo",
+          "contenido": "<p>En Duppla: el Duelo, cada jugador cuenta con su propio espacio en el tablero de juego, conocido como su <strong>mesa</strong>. La mesa está organizada en varias secciones clave que permiten controlar y visualizar el estado del juego.</p><ul><li><strong>Mazo:</strong> Aquí se colocan las 23 cartas de acción boca abajo. Desde aquí se roba durante la partida.</li><li><strong>Cementerio:</strong> Las cartas descartadas, derribadas o destruidas van a esta zona. Las cartas aquí ya no están activas, aunque algunas habilidades pueden interactuar con ellas.</li><li><strong>Campo de Batalla:</strong> Esta es la zona principal de interacción entre jugadores. Se divide en dos filas:<ul><li><em>Primera fila (Invocaciones):</em> Aquí se colocan las cartas de Invocación activas, que pueden atacar o defender.</li><li><em>Segunda fila (Zonas):</em> Aquí se colocan las cartas de Zona, que afectan al tipo de Invocaciones que se pueden jugar.</li></ul></li></ul><p>Cada jugador tiene su propia mesa con estas áreas, y debe organizarlas de forma visible y clara durante toda la partida.</p>",
+          "imagen": "../assets/symbols.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Turnos",
+      "subsecciones": [
+        {
+          "titulo": "¿Cómo funcionan los turnos?",
+          "contenido": "<p>Los turnos en Duppla: el Duelo siguen una secuencia especial que simula el paso del tiempo en una jornada de combate:</p><ul><li>Los turnos comienzan en orden <strong>ascendente del 1 al 12</strong>.</li><li>Luego se invierte el ciclo, y los turnos avanzan en orden <strong>descendente del 12 al 1</strong>.</li><li>Esta secuencia se repite si la partida continúa más allá de un ciclo completo.</li></ul><p>Los turnos son jugados de manera alterna por todos los jugadores. Se determina aleatoriamente quién empieza (Jugador 1), y luego se alternan los turnos:</p><ul><li>Turno 1: Jugador 1</li><li>Turno 1: Jugador 2</li><li>Turno 2: Jugador 1</li><li>...y así sucesivamente</li></ul>",
+          "imagen": "../assets/edA4.webp"
+        },
+        {
+          "titulo": "Estructura del Turno (Fases)",
+          "contenido": "<p>El turno en Duppla: el Duelo se divide en varias fases que deben seguirse en orden. Cada una tiene reglas específicas:</p><ul><li><strong>Inicio de Turno</strong><ul><li>Ganas monedas igual al número del turno actual.</li><li>Las <em>Invocaciones</em> giradas (si hay) se enderezan de nuevo.</li><li>Robas una carta.</li></ul></li><li><strong>Fase de Construcción</strong><ul><li>Puedes construir hasta una <strong>Zona</strong>.</li></ul></li><li><strong>Fase de Juego 1</strong><ul><li>Puedes jugar cartas de tu mano y construir <em>Zonas</em>, siempre que puedas pagar su coste con las monedas del turno.</li></ul></li><li><strong>Fase de Combate</strong><ul><li>Declaras qué <em>Invocaciones</em> atacan y las giras 90°.</li><li>Asignas una <strong>Zona</strong> como objetivo para cada <em>Invocación</em> atacante.</li><li>El rival declara con qué <em>Invocaciones</em> bloquea o si deja pasar el daño.</li><li>Se resuelven los daños de cada <em>Invocación</em>, ya sea a una <em>Zona</em> o a otra <em>Invocación</em>.</li></ul></li><li><strong>Fase de Juego 2</strong><ul><li>Puedes seguir jugando cartas y construir más <em>Zonas</em> si te quedan recursos.</li></ul></li><li><strong>Fin de Turno</strong><ul><li>Pierdes las monedas que no hayas usado.</li><li>La defensa de todas las <em>Invocaciones</em> se restaura, pero el daño hecho a las <em>Zonas</em> se mantiene.</li><li>Descartamos cartas de la mano hasta tener 6 como máximo.</li><li>El turno pasa al oponente, que comienza desde la fase de inicio.</li></ul></li></ul>",
+          "imagen": "../assets/symbols.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Condiciones de Victoria y Derrota",
+      "subsecciones": [
+        {
+          "titulo": "Condición Estándar",
+          "contenido": "<p>Para vencer deberás derribar las Zonas del oponente.</p><ul><li>Ganas el juego si derribas más de la mitad de las Zonas que el oponente haya construido.</li><li>Pierdes si el oponente destruye más de la mitad de tus Zonas construidas.</li></ul>",
+          "imagen": "../assets/edA5.webp"
+        },
+        {
+          "titulo": "Condición Alternativas",
+          "contenido": "<p><strong>Un jugador pierde la partida si:</strong></p><ul><li>En el momento de robar una carta de su mazo de acción <strong>no le quedan cartas</strong>,</li><li>y además tiene <strong>menos de 3 cartas en la mano</strong> en ese instante.</li></ul><p>Esta regla representa un agotamiento de recursos: si un jugador no puede continuar su estrategia ni reponer cartas, queda fuera de combate.</p><p>Nota: El tamaño máximo de mano es 6 cartas, por lo tanto, esta condición se activa si un jugador tiene menos de la mitad de su mano potencial mientras su mazo está vacío.</p>",
+          "imagen": "../assets/symbols.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Efectos y Resolución",
+      "subsecciones": [
+        {
+          "titulo": "Resolución de Efectos",
+          "contenido": "<p>En Duppla: el Duelo, todas las cartas pueden tener un efecto, aunque algunas no lo tienen. La resolución de estos efectos es sencilla e intuitiva, ya que:</p><ul><li><strong>Los efectos se resuelven en el momento en que la carta entra en juego.</strong></li><li><strong>Las cartas se juegan de una en una</strong>, y solo <strong>durante el turno del jugador activo</strong>. No se pueden jugar cartas durante el turno del rival.</li></ul><p>Esto significa que no existen cadenas o reacciones complejas entre turnos. El funcionamiento es lineal y claro:</p><ul><li><strong>Invocación:</strong> Al ser jugada, se aplica su efecto inmediatamente.</li><li><strong>Evento:</strong> Se resuelve su efecto al jugarla, y luego se descarta.</li><li><strong>Efectos estáticos:</strong> Son efectos permanentes que se mantienen activos mientras la carta esté en el campo. Afectan el juego constantemente hasta que esa carta abandona la mesa. Pueden ser Invocaciones, Zonas o Reliquias.</li></ul><p>Esta estructura simplifica la estrategia, permitiendo enfocarse en la gestión del turno propio sin necesidad de interrupciones o respuestas en el turno rival.</p>",
+          "imagen": "../assets/edA2.webp"
+        },
+        {
+          "titulo": "Habilidades y Efectos poco Frecuentes",
+          "contenido": "<p>Además de los efectos estándar, algunas cartas en Duppla: el Duelo poseen <strong>habilidades especiales</strong> o provocan <strong>efectos poco comunes</strong> que pueden alterar el desarrollo de la partida.</p><h4>Habilidades</h4><p>Las habilidades están descritas por un <strong>nombre propio</strong> dentro del texto de la carta. Estas habilidades tienen condiciones específicas de activación y otorgan efectos únicos.</p><p>Estas habilidades aportan profundidad táctica y deben ser usadas estratégicamente.</p><h4>Efectos Poco Frecuentes</h4><ul><li><strong>Inhabilitar Zonas:</strong> Algunas cartas permiten inhabilitar una Zona sin destruirla. En este estado:<ul><li>La Zona permanece en el campo, pero <strong>no cuenta como Zona activa</strong>.</li><li><strong>No permite invocar cartas de su estamento</strong>.</li><li><strong>No se considera derribada</strong>, por lo que no influye en las condiciones de victoria.</li><li>Visualmente, la carta se gira <strong>90º</strong> en lugar de voltearse.</li></ul></li><li><strong>Reconstrucción de Zonas:</strong> Este efecto permite <strong>restaurar una Zona derribada</strong>, devolviéndola al juego con todos sus <strong>puntos de vida restaurados</strong>. La carta vuelve a estar boca arriba y completamente funcional.</li></ul><p>Estos efectos son más raros, pero poderosos, y deben gestionarse con cuidado para maximizar su impacto.</p>",
+          "imagen": "../assets/symbols.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Casos Especiales",
+      "subsecciones": [
+        {
+          "titulo": "Cartas con Errores o Erratas",
+          "contenido": "<p>La primera edición física de Duppla: el Duelo contiene algunas <strong>erratas y errores semánticos</strong> que pueden generar confusión al interpretar el texto de ciertas cartas.</p><p>Aunque la <strong>estructura de las barajas y las cartas no ha cambiado</strong>, el contenido textual de algunas habilidades y efectos ha sido revisado y corregido en el <strong>reglamento oficial actualizado</strong>.</p><p>Por ello, se recomienda consultar siempre la <strong>última versión del reglamento</strong>, disponible en esta página web, para interpretar correctamente las cartas afectadas por errores de redacción.</p><p>Las futuras ediciones corregidas seguirán esta nueva redacción como estándar.</p>",
+          "imagen": "../assets/edA5.webp"
+        }
+      ]
+    },
+    {
+      "titulo": "Formato Competitivo",
+      "subsecciones": [
+        {
+          "titulo": "Reglas de Torneo",
+          "contenido": "<p>Los torneos oficiales de Duppla: el Duelo siguen un reglamento competitivo que busca garantizar una experiencia justa y organizada para todos los participantes. A continuación, se detallan las reglas clave:</p><ul><li><strong>Lista de Cartas:</strong> Cada jugador debe entregar una lista detallada con las 30 cartas de su baraja. Esta lista debe coincidir exactamente con la baraja que usará durante el torneo.</li><li><strong>Baraja Oficial:</strong> Solo se permite jugar con la baraja oficial registrada. Cualquier discrepancia será considerada una infracción.</li><li><strong>Formato de Partida:</strong> Las partidas se juegan al <strong>mejor de 3 rondas</strong>. El jugador que gane 2 rondas primero, gana la partida (antes de 50 minutos).</li><li> <strong>Puntos por Partida: </strong>Victoria 3 puntos, Empate 1, Derrota 0.</li><li><strong>Formato Suizo:</strong> El torneo se desarrolla en formato <strong>suizo</strong>, donde todos los jugadores juegan varias rondas contra oponentes con puntajes similares. <br>Si hay muchos participantes, se realiza un <strong>Top 8 eliminatorio</strong> al finalizar la fase suiza.</li><li><strong>Sistema de Penalizaciones:</strong> Incumplir reglas o procedimientos da lugar a un <strong>warning</strong>. Acumular 3 warnings en una misma partida implica la pérdida automática de esa ronda.</li><li><strong>Inscripción y Entrada:</strong> Para participar en un torneo es necesario <strong>solicitar la entrada con al menos un día de antelación</strong>. El día del evento, se realiza el pago de la entrada, la cual se utiliza para crear un bote.</li><li><strong>Premios:</strong> Como los torneos se realizan en tiendas físicas, <strong>el bote se convierte en crédito o premios en stock de la tienda</strong>, que se reparte entre los mejores clasificados del torneo.</li></ul><p>Se recomienda leer el reglamento completo y preparar la baraja con antelación para evitar contratiempos durante el evento.</p>",
+          "imagen": "../assets/edA3.webp"
+        },
+        {
+          "titulo": "Cartas Prohibidas o Limitadas",
+          "contenido": "<p>Actualmente, en Duppla: el Duelo <strong>no existe ninguna carta prohibida ni limitada</strong>. Todas las cartas oficiales pueden jugarse libremente dentro de las reglas estándar del formato.</p><p>En caso de que en el futuro se introduzcan restricciones por motivos de balance o diseño competitivo, se anunciarán oficialmente en esta página y en nuestros canales de difusión.</p>",
+          "imagen": "../assets/symbols.jpg"
+        },
+        {
+          "titulo": "Empates y Desempates",
+          "contenido": "<p>En los torneos de Duppla: el Duelo, se aplican reglas específicas si una partida no ha terminado cuando se agota el tiempo asignado:</p><ul><li>Si el <strong>tiempo límite se cumple</strong> mientras una partida está en curso, se jugarán <strong>3 turnos completos adicionales</strong>.</li><li>Esto significa que si se está, por ejemplo, en el <strong>Turno 9 del Jugador 1</strong>, la partida finalizará al final del <strong>Turno 11 del Jugador 2</strong>.</li><li>Si al finalizar esos 3 turnos adicionales el marcador global está <strong>1-1 o 0-0</strong>, la partida se considera <strong>empate</strong>.</li></ul><p>Esta regla asegura que ambos jugadores tengan oportunidad de concluir sus jugadas, y mantiene la equidad en situaciones ajustadas.</p>",
+          "imagen": "../assets/symbols.jpg"
+        }
+      ]
+    }
+  ]
+}

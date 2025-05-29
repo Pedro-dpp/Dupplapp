@@ -1,0 +1,357 @@
+.main-content {
+  min-height: calc(100vh - 120px);
+  padding-bottom: 2rem;
+}
+
+.page-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.player-area {
+  background-color: #c0c0c0;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.area-subtitle {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Áreas de juego específicas */
+.rival-area {
+  background-color: #d9d9d9;
+  border: 2px solid var(--danger-color);
+}
+
+.our-area {
+  background-color: #d9d9d9;
+  border: 2px solid var(--primary-color);
+}
+
+.hand-area-container {
+  background-color: #c0c0c0;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.battlefield-grid,
+.zones-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 150px;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+}
+
+.card-img {
+  width: 110px;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.card-img:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+/* Estilos específicos por área */
+.hand .card-img {
+  border-color: var(--primary-color);
+}
+
+.rival-summons .card-img {
+  border-color: var(--danger-color);
+}
+
+.our-summons .card-img {
+  border-color: var(--primary-color);
+}
+
+.rival-zones .card-img {
+  border-color: var(--danger-color);
+  opacity: 0.8; /* Para distinguir las zonas del rival */
+}
+
+.our-zones .card-img {
+  border-color: var(--success-color);
+}
+
+/* controles */
+.game-status {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+}
+
+.tutorial-section {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.phase-info {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+}
+
+.phase-name {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.player-turn {
+  text-align: center;
+}
+
+.tutorial-content {
+  background-color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.tutorial-controls {
+  margin-top: 1rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.counter-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.modal-zoom {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-zoom-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 5vh auto;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+
+.cerrar-zoom {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contador-cartas {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .player-area .row {
+    flex-direction: column;
+  }
+
+  .player-area .col-md-6 {
+    width: 100%;
+  }
+
+  .zones-grid,
+  .battlefield-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    width: 95px;
+    height: 133px;
+  }
+
+  .tutorial-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tutorial-controls .btn {
+    width: 100%;
+  }
+}
+
+.card-img {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.card-img[data-girada="true"] {
+  transform: rotate(90deg);
+  cursor: n-resize;
+}
+
+.card-area {
+  user-select: none;
+}
+
+.hand-area .cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.75rem;
+  min-height: 160px;
+  padding-bottom: 0.5rem;
+  align-items: flex-end;
+}
+
+.hand-area .card-img {
+  width: 110px;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid var(--primary-color);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.hand-area .card-img:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+.hand-area .cards-container::-webkit-scrollbar {
+  height: 6px;
+}
+.hand-area .cards-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.counter-label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.value i {
+  vertical-align: middle;
+}
+
+.card-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.card-life {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.tutorial-controls .btn {
+  min-width: 120px;
+}
+
+.tutorial-controls .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.card-img[style*="rotate(90deg)"] {
+  transform-origin: center center;
+  cursor: n-resize;
+}
+
+/* modal */
+#resumenModal .list-group-item {
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+#resumenModal .list-group-item:before {
+  content: "✓";
+  position: absolute;
+  left: 1rem;
+  color: #198754;
+  font-weight: bold;
+}
+
+#resumenModal .modal-header {
+  border-bottom: none;
+}
