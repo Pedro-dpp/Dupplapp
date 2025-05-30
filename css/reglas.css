@@ -178,3 +178,13 @@ body {
   border-color: rgba(13, 110, 253, 0.3);
   color: var(--text-primary);
 }
+
+.card-footer .btn {
+  margin: 5px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .card-footer {
+    flex-direction: column;
+  }
+}
