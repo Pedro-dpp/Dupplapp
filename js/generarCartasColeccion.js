@@ -123,7 +123,7 @@ function mostrarCartas(cartasMostrar) {
                 <p><strong>Coste en Monedas:</strong> ${carta.coste_monedas}</p>
                 <p><strong>Estamento:</strong> ${estamento}</p>
                 <p><strong>Texto:</strong> ${carta.descripcion}</p>
-                <p><strong>Descripcion de Habilidades:</strong> ${habilidades}</p>
+                <p><strong>Descripción de Habilidades:</strong> ${habilidades}</p>
                 <!--
                 <p><strong>Vida:</strong> ${carta.vida}</p>
                 <p><strong>Fuerza:</strong> ${carta.fuerza}</p>
