@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         subitem.addEventListener("click", (e) => {
           e.preventDefault();
-          loadRuleContent(seccion, subIndex);
+          loadRuleContent(seccion, subIndex, data.secciones);
         });
 
         subitemsList.appendChild(subitem);
