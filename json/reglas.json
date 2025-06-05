@@ -69,7 +69,7 @@
           "imagen": "../assets/edA5.webp"
         },
         {
-          "titulo": "Condición Alternativas",
+          "titulo": "Condición Alternativa",
           "contenido": "<p><strong>Un jugador pierde la partida si:</strong></p><ul><li>En el momento de robar una carta de su mazo de acción <strong>no le quedan cartas</strong>,</li><li>y además tiene <strong>menos de 3 cartas en la mano</strong> en ese instante.</li></ul><p>Esta regla representa un agotamiento de recursos: si un jugador no puede continuar su estrategia ni reponer cartas, queda fuera de combate.</p><p>Nota: El tamaño máximo de mano es 6 cartas, por lo tanto, esta condición se activa si un jugador tiene menos de la mitad de su mano potencial mientras su mazo está vacío.</p>",
           "imagen": "../assets/symbols.jpg"
         }
